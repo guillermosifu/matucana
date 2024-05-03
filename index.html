@@ -457,23 +457,23 @@
                     <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
                         <h5 class="section-title ff-secondary text-start text-primary fw-normal">Reservacion</h5>
                         <h1 class="text-white mb-4">Formulario de Reserva</h1>
-                        <form>
+                        <form action="https://formsubmit.co/hostalmatucana@gmail.com" method="POST">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <input type="text" name="nombre" class="form-control" id="name" placeholder="Your Name">
                                         <label for="name">Nombre</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <input type="email" name="email" class="form-control" id="email" placeholder="Your Email">
                                         <label for="email">Email</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating date" id="date3" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
+                                        <input type="text" name="fecha" class="form-control datetimepicker-input" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
                                         <label for="datetime">Fecha y Hora</label>
                                     </div>
                                 </div>
@@ -491,7 +491,7 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Special Request" id="message" style="height: 100px"></textarea>
+                                        <textarea name="mensaje" class="form-control" placeholder="Special Request" id="message" style="height: 100px"></textarea>
                                         <label for="message">Requerimiento Especial</label>
                                     </div>
                                 </div>
@@ -499,6 +499,8 @@
                                     <button class="btn btn-primary w-100 py-3" type="submit">Enviar 
                                         Reserva
                                     </button>
+                                    <input type="hidden" name="_next" value="https://hostalmatucana.com">
+                                    <input type="hidden" name="_captcha" value="false">
                                 </div>
                             </div>
                         </form>
@@ -671,7 +673,7 @@
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contactanos</h4>
                         <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Jr Lima 363-Matucana/Huarochiri</p>
                         <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+51 920-776-401</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@hostalmatucana.com</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>hostalmatucana@gmail.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
